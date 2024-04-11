@@ -8,6 +8,9 @@ setDefaultTimeout(timeout);
 BeforeAll(async () => {
   // Giving browser- Chromium and headed mode
   global.browser = await playwright['chromium'].launch({ headless: false });
+  // global.browser = await playwright['firefox'].launch({ headless: false });
+  // global.browser = await playwright['webkit'].launch({ headless: false });
+  // global.browser = await playwright['Google Chrome'].launch({ headless: false });
   console.log('Browser has launched')
 })
 
