@@ -1,9 +1,16 @@
 const playwright = require('playwright')
 const { Before, After, BeforeAll, AfterAll, Status, setDefaultTimeout, AfterStep } = require('@cucumber/cucumber')
-const timeoutData = require('../config.json');
+const dotenv = require('dotenv');
+// const { setDefaultTimeout } = require('@cucumber/cucumber');
 
-const timeout = timeoutData.waitTime;
-setDefaultTimeout(timeout);
+// Load environment variables from .env file
+dotenv.config();
+
+// Parse the WAIT_FOR_TIMEOUT variable from the environment
+const waitForTimeout = parseInt(process.env.WAIT_FOR_TIMEOUT);
+
+// Set the default timeout using the parsed value
+setDefaultTimeout(waitForTimeout);
 
 BeforeAll(async () => {
   // Giving browser- Chromium and headed mode
