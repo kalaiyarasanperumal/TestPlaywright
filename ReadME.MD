@@ -1,9 +1,11 @@
 Test Creating Feamework
 
-1 . Install Node Engine latest
 
-2. Install playwright - sudo npm install playwright 
+git clone <url> 
 
-3. 
+sudo npm install 
+
+npm run test <npx cucumber-js>
+
 
      
