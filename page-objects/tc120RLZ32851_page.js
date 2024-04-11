@@ -1,7 +1,7 @@
 const playwright = require('playwright')
 
 
-class SaavasPage {
+class PlaywrightPage {
 
   async saavasBaseUrl() {
     return await page.goto(global.BASE_URL);
@@ -102,4 +102,4 @@ class SaavasPage {
 
 }
 
-module.exports = { SaavasPage }
+module.exports = { PlaywrightPage }

@@ -1,6 +1,7 @@
-const { Given, When, Then, defineStep } = require('@cucumber/cucumber')
+const { Given, When, Then } = require('@cucumber/cucumber')
 const { PlaywrightPage } = require('../page-objects/tc120RLZ32851_page')
-const { parseGherkinMessageStream } = require("@cucumber/cucumber");
+// const { parseGherkinMessageStream } = require("@cucumber/cucumber");
+const { GherkinStreams } = require("@cucumber/gherkin");
 const { setDefaultTimeout } = require('@cucumber/cucumber')
 const timeoutData = require('../config.json');
 
