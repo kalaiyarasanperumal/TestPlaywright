@@ -1,0 +1,19 @@
+{
+    "name": "test_playwright_framework",
+    "version": "1.0.0",
+    "description": "creating playwright_framework",
+    "main": "index.js",
+    "scripts": {
+        "test": "./node_modules/.bin/cucumber-js --require cucumber.js --require step-definitions/**/*.js -f --publish-quiet  --require json:cucumber_report.json --require html:reports/**/*.html",
+        "report": "./reporter.js"
+    },
+    "author": "Test Automation",
+    "license": "ISC",
+    "dependencies": {
+        "@cucumber/cucumber": "^10.4.0",
+        "chai": "^4.3.6",
+        "cucumber-html-reporter": "^5.5.0",
+        "playwright": "^1.21.1",
+        "prettier": "^2.6.2"
+    }
+}
